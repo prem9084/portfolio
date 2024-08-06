@@ -24,7 +24,7 @@
     "deploy":"gh-pages -d build" 
 
   },
-  "homepage": "https://prem9084.github.io/my-portFolio",
+  "homepage": "https://prem9084.github.io/portfolio",
   "eslintConfig": {
     "extends": [
       "react-app",
