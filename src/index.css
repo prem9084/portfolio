@@ -1,0 +1,250 @@
+:root {
+  --box-shadow: 5px 5px 10px 0px rgba(101, 175, 10, 0.5);
+  --bg-color: rgb(40, 47, 97);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(11, 26, 51);
+  color: white;
+}
+
+/* Nabbar section */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_bar .nav_items {
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav_bar .nav_items:hover {
+  border-bottom: 3px solid yellow;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-left: -1.4rem !important;
+  }
+  .nav_bar .right {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .nav_items {
+    font-size: 9px !important;
+  }
+}
+
+/* Home Section */
+
+.home {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .left {
+  background-color: var(--bg-color);
+  width: 650px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+
+.home .right .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .right .img img {
+  height: 500px;
+  width: 450px;
+  border-radius: 100%;
+  border: 2px solid yellow;
+  animation-name: colorChange;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    border-color: blue;
+    transform: translate(0, 0px);
+    box-shadow: 10px 10px 100px 50px blue;
+  }
+  25% {
+    border-color: rgb(239, 244, 11);
+    transform: translate(0, 0px);
+    box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+  }
+  50% {
+    border-color: rgb(12, 12, 199);
+    transform: translate(0, 10px);
+    box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+  }
+  75% {
+    border-color: rgb(130, 217, 160);
+    transform: translate(0, 10px);
+    box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+  }
+  100% {
+    border-color: rgb(50, 55, 205);
+    transform: translate(0, -0px);
+    box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin-left: 0.5rem !important;
+    margin-top: 13rem !important;
+  }
+  .left {
+    width: 22.5rem !important;
+    margin: auto !important;
+  }
+  .right {
+    width: 22.5rem !important;
+    margin: auto !important;
+  }
+}
+
+/* internship */
+
+.internship {
+  background-color: black;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  width: 500px;
+  padding: 30px;
+  margin-bottom: 2rem;
+}
+span {
+  font-size: bold;
+  color: yellow;
+}
+.intro {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .ex {
+    margin-top: 5rem !important;
+    margin-left: 1.6rem !important;
+  }
+  .internship {
+    width: 23rem !important;
+  }
+}
+
+/* Skills */
+
+.skills {
+  width: 900px;
+}
+
+.skills .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.skills .items .item {
+  background-color: black;
+  width: calc(33.33%);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+
+.skills .items img {
+  width: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills .items {
+    /* display: flex !important; */
+
+    width: 500px;
+    padding: 1rem !important;
+    margin-left: -2.6rem !important;
+  }
+  .items {
+    margin: 0 !important;
+  }
+}
+
+/* project */
+
+@media only screen and (max-width: 768px) {
+  .row {
+    margin-left: 3.5rem !important;
+  }
+}
+
+/* Contect */
+
+.contect-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contect-icon .items {
+  background-color: black;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid yellow;
+}
+
+.contect-icon .items .icons {
+  font-size: 2rem;
+}
+
+.contect-icon .items:hover {
+  background-color: var(--bg-color);
+
+  box-shadow: var(--box-shadow);
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .contect-icon {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem !important;
+  }
+}

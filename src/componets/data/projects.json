@@ -1,0 +1,19 @@
+[
+  {
+    "key": 1,
+    "title": "E-Commerce MERN Stack",
+    "imageSrc": "https://cdn.pixabay.com/photo/2018/02/04/17/39/crypto-currency-3130381_640.jpg",
+    "description": "This is a project made with complete MERN Stack",
+    "demo": "https://stunning-puppy-4fc55c.netlify.app",
+    "source": "https://github.com/prem9084/right_project-E-commerce.git"
+  },
+
+  {
+    "key": 3,
+    "title": "Twitter Clone",
+    "imageSrc": "https://cdn.pixabay.com/photo/2016/08/16/17/12/skyscrapers-1598418_640.jpg",
+    "description": "This is a project made with complete MERN Stack",
+    "demo": "https://www.example.com",
+    "source": "https://github.com/prem9084/Twitter-Clone.git"
+  }
+]
